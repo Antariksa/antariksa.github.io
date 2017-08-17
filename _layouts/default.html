@@ -38,24 +38,24 @@
       <nav>
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="{{ site.baseurl }}/" class="brand-logo">{{ site.name }} | {{ site.description }}</a>        
+            <a href="{{ site.baseurl }}/" class="brand-logo">{{ site.name }}</a>        
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
             <!-- Navbar menu -->
             <ul class="right hide-on-med-and-down">          
-              <li class="link"><a href="{{ site.baseurl }}//product">Product</a></li>
-              <li class="link"><a href="{{ site.baseurl }}/blueprints">Blueprints</a></li>          
-              <li class="link"><a href="{{ site.baseurl }}/pricing">Pricing</a></li>   
+              <li class="link"><a href="{{ site.baseurl }}/">Home</a></li>
+              <li class="link"><a href="{{ site.baseurl }}/blog">Blog</a></li>          
+              <li class="link"><a href="{{ site.baseurl }}/product">Product</a></li>          
               <li><a href="{{ site.baseurl }}/hireme" class="waves-effect waves-light btn yellow darken-2 grey-text text-darken-4" id="start-now-navbar">HIRE ME !</a>
               </li>     
             </ul>
 
             <!-- Navbar menu mobile -->
             <ul class="side-nav" id="mobile-demo">
-              <li><a href="/product">Product</a></li>
-              <li><a href="/blueprints">Blueprints</a></li>          
-              <!-- <li><a href="/partners">Partners</a></li>           -->
-              <li><a href="/pricing">Pricing</a></li>   
+              <li><a href="{{ site.baseurl }}/">Home</a></li>
+              <li><a href="{{ site.baseurl }}/blog">Blog</a></li>          
+              <li><a href="{{ site.baseurl }}/product">Product</a></li>          
+              <li><a href="{{ site.baseurl }}/hireme" class="waves-effect waves-light btn yellow darken-2 grey-text text-darken-4" id="start-now-navbar">HIRE ME !</a>
             </ul>
 
           </div>
@@ -98,8 +98,6 @@
 
     {% include analytics.html %}
     
-    
-    <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 
