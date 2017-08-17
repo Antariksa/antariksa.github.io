@@ -38,16 +38,15 @@
       <nav>
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="/" class="brand-logo"><img src="/images/full-logo-no-neck.png" class="logo-img" alt=""></a>        
+            <a href="{{ site.baseurl }}/" class="brand-logo"><img src="{{ site.avatar }}" class="logo-img" alt="">{{ site.name }} | {{ site.description }}</a>        
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
             <!-- Navbar menu -->
             <ul class="right hide-on-med-and-down">          
-              <li class="link"><a href="/product">Product</a></li>
-              <li class="link"><a href="/blueprints">Blueprints</a></li>          
-              <!-- <li class="link"><a href="/partners">Partners</a></li>  -->         
-              <li class="link"><a href="/pricing">Pricing</a></li>   
-              <li><a href="https://editor.stamplay.com/home" class="waves-effect waves-light btn yellow darken-2 grey-text text-darken-4" id="start-now-navbar">Login</a>
+              <li class="link"><a href="{{ site.baseurl }}//product">Product</a></li>
+              <li class="link"><a href="{{ site.baseurl }}/blueprints">Blueprints</a></li>          
+              <li class="link"><a href="{{ site.baseurl }}/pricing">Pricing</a></li>   
+              <li><a href="{{ site.baseurl }}/hireme" class="waves-effect waves-light btn yellow darken-2 grey-text text-darken-4" id="start-now-navbar">HIRE ME !</a>
               </li>     
             </ul>
 
@@ -63,66 +62,38 @@
         </div>
       </nav>
     </div>
-    
 
-        
-
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
+    <div class="container">
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
+    <footer class="page-footer">
       <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    
-    
-            <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2017 antariksa.org | developed by antariksa.org
+        <a class="grey-text text-lighten-4 right" href="#!">
+          {% include svg-icons.html %}
+        </a>
+        </div>
+      </div>
+    </footer>
 
 
     {% include analytics.html %}
