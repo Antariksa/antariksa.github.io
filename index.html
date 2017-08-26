@@ -2,17 +2,19 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
+{% for post in site.posts %}
+<div class="row">
+  <div class="col s12 m6">
+    <div class="card">
+      <div class="card-image">
+        <img src="images/sample-1.jpg">
+        <span class="card-title">{{ page.title }}</span>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+      <div class="card-content">
         {{ post.excerpt }}
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+    </div>
+  </div>
 </div>
+{% endfor %}
