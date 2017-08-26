@@ -8,7 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-name: Your Name
+name: Antariksa
 description: Web Developer from Somewhere
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 footer-links:
