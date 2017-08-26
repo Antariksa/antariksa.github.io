@@ -4,15 +4,19 @@ layout: default
 
 {% for post in site.posts %}
 <div class="row">
-  <div class="col s12 m6">
-    <div class="card">
+  <div class="col s12">
+    <div class="card horizontal">
       <div class="card-image">
-        <img src="images/sample-1.jpg">
-        <span class="card-title">{{ page.title }}</span>
-        <a href="{{ site.baseurl }}{{ post.url }}" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        <img src="https://lorempixel.com/100/190/nature/6">
       </div>
-      <div class="card-content">
-        {{ post.excerpt }}
+      <div class="card-stacked">
+        <div class="card-content">
+          {{ page.title }}
+          {{ post.excerpt }}
+        </div>
+        <div class="card-action">
+          <a href="{{ site.baseurl }}{{ post.url }}">Selengkapnya ..</a>
+        </div>
       </div>
     </div>
   </div>
