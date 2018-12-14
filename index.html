@@ -1,1 +1,25 @@
 hello !
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+<script type="text/javascript">
+			jQuery.ajax({
+				url: 'https://api.dutacendana.co.id/v1/websites/service',
+				method : "POST", 
+				type: "POST",
+				data: jQuery('#booking-service').serialize(),
+				dataType: 'json',
+				success: function (data) {
+					jQuery('#dca-loading').fadeOut();
+					jQuery('#modal-bookservice').modal('open');
+					setTimeout(function() {
+						document.location.reload()
+					}, 8000);
+				},
+				error: function (data) {
+					alert("Terjadi kesalahan mohon laporkan ke all.it@dutacendana.co.id");
+				}
+			});
+
+</script>
