@@ -4,15 +4,7 @@ permalink: "/tanyadia/"
 layout: page
 ---
 
-    <div class="container">
+Belum beres za websitenya, belum sempet edit (-,-")
+kalau mungkin masih minat kayanya beres baru hari senin malam, coba follow back ig @andre_antariksa, biar tau aku kamu minat baca profile ku.
 
-      <h1>404</h1>
-      <p><strong>Belum beres websitenya ZAAAAAA</strong></p>
-
-      <p>
-        The site configured at this address does not
-        contain the requested file.
-      </p>
-
-     
-    </div>
+makasih
